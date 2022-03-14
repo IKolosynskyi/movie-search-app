@@ -103,6 +103,7 @@ export const MovieItem: React.FC<Props> = ({ movie }) => {
               )}
               {imdbMovieId && (
                 <Link
+                  marginRight={1}
                   target="_blank"
                   href={`https://www.imdb.com/title/${imdbMovieId}`}
                 >
@@ -170,4 +171,5 @@ const ShortDescription = styled(Typography)`
 const InfoBlock = styled("div")`
   display: flex;
   flex-direction: row;
+  align-items: center;
 `;
